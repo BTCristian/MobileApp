@@ -17,10 +17,11 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "package" : "com.reactnative.videosmate"
+      "package": "com.reactnative.videosmate",
+      "bundleIdentifier": "MobileAppAora"
     },
     "android": {
-      "package" : "com.reactnative.videosmate",
+      "package": "com.reactnative.videosmate",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -31,6 +32,14 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3a0639c0-2939-4776-9fda-a81d2e74c0d8"
+      }
+    }
   }
 }
