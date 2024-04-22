@@ -1,8 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { Image, ScrollView, Text, View } from "react-native";
-import { Link, Redirect, router } from "expo-router";
+import { Redirect, router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 import { images } from "../constants";
 import CustomButton from "../components/CustomButton.jsx";
 import { useGlobalContext } from "../context/GlobalProvider.js";
@@ -31,11 +30,6 @@ export default function App() {
               Discover Endless Possibilities with{" "}
               <Text className="text-secondary-200">Aora</Text>
             </Text>
-            {/* <Image
-              source={images.path}
-              className="w-[136px] h-[15px] absolute -bottom-2 right-"
-              resizeMode="contain"
-            /> */}
           </View>
           <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
             Where creativity meets innovation: embark on a journey of limitless
