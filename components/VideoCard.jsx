@@ -2,16 +2,9 @@ import React, { useState } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { icons } from "../constants";
 import { ResizeMode, Video } from "expo-av";
-import DropDownPicker from "react-native-dropdown-picker";
 
 const VideoCard = ({ title, creator, avatar, thumbnail, video }) => {
-  const [selectedValue, setSelectedValue] = useState(null);
   const [play, setPlay] = useState(false);
-  const items = [
-    { label: "Option 1", value: "option1" },
-    { label: "Option 2", value: "option2" },
-    { label: "Option 3", value: "option3" },
-  ];
 
   return (
     <View className="flex flex-col items-center px-4 mb-14">
